@@ -6,9 +6,9 @@
 
 **현재 단계:** 기획·설계 및 초기 파일 준비. 기능 구현·통합·배포는 진행 예정입니다.
 
-**주요 링크:** [GitHub 저장소](https://github.com/MirDraco/team-portfolio) · [작업 현황](https://github.com/MirDraco/team-portfolio/issues)
+**주요 링크:** [GitHub 저장소](https://github.com/MirDraco/oss-team-portfolio) · [작업 현황](https://github.com/MirDraco/oss-team-portfolio/issues)
 
-**GitHub Pages:** 배포와 접속 확인 후 주소를 추가합니다.
+**GitHub Pages:** [GitHub Pages 링크](https://mirdraco.github.io/oss-team-portfolio/)
 
 ## 🚀 프로젝트 개요
 | 항목 | 내용 |
@@ -76,7 +76,7 @@
 아래는 **구현 예정 구조**이며, 실제 파일 구성과 다를 수 있습니다.
 
 ```text
-team-portfolio/
+oss-team-portfolio/
 ├── index.html          # 메인 페이지
 ├── about.html          # 팀 소개
 ├── members.html        # 팀원 프로필
@@ -203,8 +203,8 @@ PR·리뷰 진행 관리 담당자가 있어도 모든 PR을 대신 작성하거
 ## 📝 활동 및 협업 기록
 | 기록 | 확인 위치·상태 |
 | --- | --- |
-| 담당 작업과 진행 상황 | [GitHub Issues](https://github.com/MirDraco/team-portfolio/issues) |
-| PR 및 코드 리뷰 | [Pull requests](https://github.com/MirDraco/team-portfolio/pulls) |
+| 담당 작업과 진행 상황 | [GitHub Issues](https://github.com/MirDraco/oss-team-portfolio/issues) |
+| PR 및 코드 리뷰 | [Pull requests](https://github.com/MirDraco/oss-team-portfolio/pulls) |
 | 회의·설계 기록 | 공개 가능한 문서 정리 후 연결 |
 | 화면·기능 테스트 | 실제 점검 결과 작성 후 연결 |
 | 병합 충돌·문제 해결 | 실제 사례 발생 및 해결 후 연결 |
