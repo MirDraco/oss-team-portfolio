@@ -1,0 +1,76 @@
+name: "🧶 작업 등록"
+description: "팀의 기획·구현·수정·문서·설정 작업을 등록합니다."
+title: "[작업] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **결망 작업 등록**
+        제목에는 실제 작업 내용을 적고, 기존 Issue와 중복되는지 먼저 확인해주세요.
+        설계 작업과 구현 작업을 구분하고, 이번에 맡을 범위를 작성해주세요.
+        [README 협업 안내](https://github.com/MirDraco/oss-team-portfolio#readme)를 참고해주세요.
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 작업 목적
+      description: "무엇을 만들거나 해결하기 위한 작업인가요?"
+      placeholder: "예) 팀원 6명의 소개를 한 페이지에서 확인할 수 있도록 프로필 화면을 설계합니다."
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: 담당자
+      description: "본인 GitHub ID를 적어주세요. 이 입력은 실제 담당자 지정과 별개이므로, 등록 후 우측 Assignees에도 본인을 지정해주세요."
+      placeholder: "@GitHub아이디 (이름)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 작업 내용
+      description: "수행할 일을 체크리스트로 적어주세요. 아래 예시는 실제 작업에 맞게 바꿔주세요."
+      placeholder: |
+        - [ ] 프로필에 들어갈 정보 항목을 정한다.
+        - [ ] PC·모바일 카드 배치를 스케치한다.
+        - [ ] 공통 UI와 프로필 본문의 담당 경계를 협의한다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 완료 조건
+      description: "다른 팀원도 확인할 수 있는 결과를 적어주세요. 설계는 문서·스케치, 구현은 표시·동작을 기준으로 작성합니다."
+      placeholder: |
+        - [ ] 프로필 정보 항목과 카드 배치가 설계 문서에 정리되어 있다.
+        - [ ] 공통 영역과 프로필 본문의 담당 경계가 명시되어 있다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 작업 범위
+      description: "대상 파일·문서와 맡을 영역, 이번에 하지 않는 작업을 구분해주세요. 미정인 파일명은 제안으로 표시해주세요."
+      placeholder: |
+        - 대상 페이지·파일·문서:
+        - 담당 영역:
+        - 이번 작업에서 제외할 내용:
+    validations:
+      required: true
+
+  - type: textarea
+    id: coordination
+    attributes:
+      label: 참고·협의 사항
+      description: "참고 자료, 먼저 필요한 작업, 협의할 팀원을 적어주세요. 없으면 비워둬도 됩니다."
+      placeholder: |
+        - 참고 자료·화면 스케치:
+        - 관련 Issue:
+        - 먼저 협의할 내용과 담당자:
+    validations:
+      required: false
