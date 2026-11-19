@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------- header ---------------- */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #f5f1e8;
+}
+
+.logoarea {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #F5F1E8;
+}
+
+.log{
+    width: 0px;
+
+}
+.search {
+    margin-left: 534px; 
+}
+
+.search input {
+    width: 470px;
+    height: 45px;
+    border: 2px solid #5A3A1B;
+    border-radius: 25px;
+    padding-left: 20px;
+    background-color: white;
+}
