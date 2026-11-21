@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+
 :root {
     color-scheme: light;
     --paper: #f4efe4;
@@ -26,7 +28,7 @@ body {
         linear-gradient(45deg, transparent 48%, rgba(139, 73, 59, 0.035) 49%, rgba(139, 73, 59, 0.035) 51%, transparent 52%),
         linear-gradient(-45deg, transparent 48%, rgba(139, 73, 59, 0.035) 49%, rgba(139, 73, 59, 0.035) 51%, transparent 52%);
     background-size: 30px 30px;
-    font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     line-height: 1.65;
 }
 
