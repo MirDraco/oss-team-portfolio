@@ -5,36 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="결망(結網) 팀의 목표와 협업 방식을 소개합니다.">
     <title>팀 소개 | 結網 결망</title>
-    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="team.css">
 </head>
 <body>
-    <header class="site-header">
-        <a class="brand" href="index.html" aria-label="결망 메인 페이지">
-            <span lang="zh">結網</span><span>결망</span>
-        </a>
-        <nav aria-label="주요 메뉴">
-            <a href="faq.html">FAQ</a>
-            <a href="team.html" aria-current="page">팀 소개</a>
-            <a href="members.html">팀원 소개</a>
-            <a href="gallery.html">프로젝트 갤러리</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="intro" id="about">
+    <main class="team-page">
+        <section class="intro" aria-labelledby="team-title">
             <div class="intro-copy-block">
                 <p class="eyebrow">순천향대학교 · 오픈소스SW활용 H조</p>
-                <h1><span class="title-line">여섯 갈래의 배움이 모여,</span><br><span class="title-emphasis">하나의 웹을 이룹니다.</span></h1>
+                <h1 id="team-title"><span class="title-line">여섯 갈래의 배움이 모여,</span><br><span class="title-emphasis">하나의 웹을 이룹니다.</span></h1>
                 <p class="intro-copy">
                     결망(結網)은 각자의 관심과 역할을 살려 함께 배우고 완성하는 팀입니다.
                     팀원과 프로젝트, 협업 과정을 기록하며 오픈소스 개발을 함께 경험합니다.
                 </p>
-                <div class="intro-links">
+                <div class="page-actions">
                     <a class="button" href="members.html">팀원 소개 <span aria-hidden="true">↗</span></a>
-                    <a class="plain-link" href="gallery.html">프로젝트 보기 <span aria-hidden="true">↗</span></a>
+                    <a class="plain-link" href="gallery.html">프로젝트 갤러리 <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-            <div class="hanok-motif" aria-hidden="true">
+
+            <figure class="hanok-motif" aria-hidden="true">
                 <svg class="hanok-emblem" viewBox="0 0 300 300" focusable="false">
                     <defs>
                         <clipPath id="window-clip">
@@ -56,8 +45,8 @@
                     <text x="150" y="145" text-anchor="middle" fill="#F5F1E8" font-family="Batang, 'Noto Serif KR', serif" font-size="27">結</text>
                     <text x="150" y="178" text-anchor="middle" fill="#F5F1E8" font-family="Batang, 'Noto Serif KR', serif" font-size="27">網</text>
                 </svg>
-                <span class="motif-caption">여섯 갈래 · 하나의 망</span>
-            </div>
+                <figcaption class="motif-caption">여섯 갈래 · 하나의 망</figcaption>
+            </figure>
         </section>
 
         <section class="about" aria-labelledby="about-title">
@@ -67,18 +56,18 @@
             </div>
             <div class="about-content">
                 <p>결망은 팀원과 프로젝트, 협업 과정을 한곳에 담는 팀 포트폴리오입니다. 각자 맡은 기능을 만들고 서로 검토하며 하나의 결과물로 연결합니다.</p>
-                <ul>
+                <ul class="values-list">
                     <li><strong>나누기</strong><span>작업을 나누고 진행 과정을 기록합니다.</span></li>
                     <li><strong>협업하기</strong><span>코드 리뷰를 통해 함께 개선합니다.</span></li>
                     <li><strong>공유하기</strong><span>완성한 결과물을 웹으로 공개합니다.</span></li>
                 </ul>
             </div>
         </section>
-    </main>
 
-    <footer class="site-footer">
-        <a href="index.html"><span lang="zh">結網</span> 결망</a>
-        <p>여섯 명의 배움과 코드를 엮어, 하나의 웹사이트를 만듭니다.</p>
-    </footer>
+        <section class="faq-prompt" aria-label="FAQ 페이지 안내">
+            <p>결망에 대해 더 궁금한 점이 있나요?</p>
+            <a href="faq.html">자주 묻는 질문 보기 <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
 </body>
 </html>
