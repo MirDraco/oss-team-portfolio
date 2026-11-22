@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F5F1E8;
+    color: #302A24;
+    font-family: "Pretendard", -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+/* 전체 영역 */
+.activity {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.activity-title {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.activity-subtitle {
+    margin: 8px 0 28px;
+    color: #71695E;
+    text-align: center;
+}
+
+/* 필터 버튼 */
+.filter-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #C5A730;
+    border-radius: 20px;
+    background-color: #FBF8F0;
+    color: #302A24;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    border-color: #8B493B;
+    color: #8B493B;
+}
+
+.filter-btn.active {
+    background-color: #8B493B;
+    border-color: #8B493B;
+    color: #FBF8F0;
+}
+
+/* 각 섹션 공통 */
+.activity-section {
+    padding: 28px 0;
+    border-top: 1px solid #D8CDBB;
+}
+
+.section-title {
+    margin: 0 0 20px;
+    font-size: 22px;
+    color: #8B493B;
+}
+
+/* 1. 회의 기록 */
+.meeting-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.meeting-card {
+    padding: 20px;
+    background-color: #FBF8F0;
+    border: 1px solid #C5A730;
+    border-radius: 10px;
+}
+
+.meeting-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.meeting-date {
+    margin: 0 0 4px;
+    font-size: 13px;
+    color: #71695E;
+}
+
+.meeting-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.meeting-toggle {
+    padding: 8px 14px;
+    border: 1px solid #302A24;
+    border-radius: 6px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.meeting-toggle:hover {
+    background-color: #214E44;
+    border-color: #214E44;
+    color: #F5F1E8;
+}
+
+.meeting-detail {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed #C5A730;
+    font-size: 14px;
+}
+
+.meeting-detail ul {
+    margin: 0 0 10px;
+    padding-left: 20px;
+}
+
+.meeting-detail p {
+    margin: 0;
+    color: #71695E;
+}
+
+/* 2. 개발 과정 */
+.process-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.process-card {
+    padding: 20px;
+    background-color: #FBF8F0;
+    border: 1px solid #D8CDBB;
+    border-left: 4px solid #8B493B;
+    border-radius: 8px;
+}
+
+.process-step {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+    background-color: #8B493B;
+    color: #FBF8F0;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.process-date {
+    margin-left: 8px;
+    font-size: 13px;
+    color: #71695E;
+}
+
+.process-card h3 {
+    margin: 4px 0 8px;
+    font-size: 18px;
+}
+
+.process-card ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #554D44;
+    font-size: 14px;
+}
+
+/* 3. 활동 사진 및 결과물 */
+.photo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.photo-card {
+    background-color: #FBF8F0;
+    border: 1px solid #C5A730;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.photo-box {
+    height: 180px;
+    background-color: #E8DFCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #71695E;
+    font-size: 14px;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-info {
+    padding: 16px;
+}
+
+.photo-tag {
+    margin: 0 0 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #8B493B;
+}
+
+.photo-info h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+
+.photo-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #71695E;
+}
+
+/* 모바일 화면 */
+@media (max-width: 768px) {
+    .photo-list {
+        grid-template-columns: 1fr;
+    }
+}
