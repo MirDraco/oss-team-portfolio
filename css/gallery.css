@@ -36,64 +36,9 @@ a {
     color: inherit;
 }
 
-.site-header,
-main,
-.site-footer {
+main {
     width: min(1120px, calc(100% - 48px));
     margin-inline: auto;
-}
-
-.site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 82px;
-    border-bottom: 1px solid var(--line);
-}
-
-.brand {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 9px;
-    text-decoration: none;
-}
-
-.brand-hanja,
-.footer-knot {
-    color: var(--red);
-    font-family: "Batang", "Noto Serif KR", serif;
-    letter-spacing: 0.12em;
-}
-
-.brand-hanja {
-    font-size: 1.45rem;
-}
-
-.brand-name {
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-}
-
-.back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 0 8px 12px;
-    color: var(--muted);
-    font-size: 0.9rem;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
-}
-
-.back-link:hover {
-    color: var(--red);
-}
-
-.back-link:focus-visible,
-.brand:focus-visible {
-    outline: 2px solid var(--red);
-    outline-offset: 5px;
 }
 
 .intro {
@@ -442,9 +387,7 @@ h1 {
     text-underline-offset: 4px;
 }
 
-.detail-back:focus-visible,
-.back-link:focus-visible,
-.brand:focus-visible {
+.detail-back:focus-visible {
     outline: 2px solid var(--red);
     outline-offset: 5px;
 }
@@ -457,26 +400,6 @@ h1 {
     to {
         background-color: rgba(251, 248, 240, 0.82);
     }
-}
-
-.site-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    min-height: 82px;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    font-size: 0.82rem;
-    text-align: center;
-}
-
-.site-footer p {
-    margin: 0;
-}
-
-.footer-knot {
-    font-size: 1.1rem;
 }
 
 @media (max-width: 960px) {
@@ -496,18 +419,8 @@ h1 {
 }
 
 @media (max-width: 560px) {
-    .site-header,
-    main,
-    .site-footer {
+    main {
         width: min(100% - 32px, 420px);
-    }
-
-    .site-header {
-        min-height: 70px;
-    }
-
-    .back-link {
-        font-size: 0.82rem;
     }
 
     .intro {
@@ -617,11 +530,6 @@ h1 {
 
     .detail-content {
         padding: 18px;
-    }
-
-    .site-footer {
-        gap: 9px;
-        font-size: 0.75rem;
     }
 }
 
