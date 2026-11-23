@@ -1,0 +1,299 @@
+/* 1. 기본 페이지 및 공통 CSS 변수 덮어쓰기 */
+body.dark-mode {
+    --ivory: #1D1B19;
+    --paper: #1D1B19;
+    --paper-light: #1D1B19;
+    --white: #1D1B19;
+    --black: #F5F1E8;
+    --ink: #F5F1E8;
+    --muted: #D4D2CE;
+    --line: #C9A66B;
+    --red: #E58A7F;
+    --gold: #C9A66B;
+    --blue: #88B5D1;
+    --green: #E58A7F;
+
+    background-color: #1D1B19;
+    color: #F5F1E8;
+}
+
+body.dark-mode a:focus-visible,
+body.dark-mode button:focus-visible,
+body.dark-mode input:focus-visible,
+body.dark-mode summary:focus-visible {
+    outline: 2px solid #E58A7F;
+    outline-offset: 3px;
+}
+
+/* 2. 공통 헤더 · 내비게이션 · 푸터 */
+body.dark-mode header,
+body.dark-mode #site-header > header,
+body.dark-mode nav,
+body.dark-mode #site-nav > nav,
+body.dark-mode footer,
+body.dark-mode #site-footer > footer {
+    background-color: #1D1B19;
+    color: #F5F1E8;
+}
+
+body.dark-mode .nav-inner {
+    border-bottom-color: #C9A66B;
+}
+
+body.dark-mode .category a {
+    color: #F5F1E8;
+}
+
+body.dark-mode .category a:hover {
+    color: #E58A7F;
+}
+
+body.dark-mode .search input {
+    background-color: #1D1B19;
+    border-color: #C9A66B;
+    color: #F5F1E8;
+}
+
+body.dark-mode .search input::placeholder {
+    color: #D4D2CE;
+}
+
+body.dark-mode .search input:focus {
+    border-color: #E58A7F;
+    outline-color: #E58A7F;
+}
+
+body.dark-mode footer {
+    border-top: 1px solid #C9A66B;
+}
+
+body.dark-mode .guide {
+    color: #E58A7F;
+}
+
+body.dark-mode .copy {
+    color: #D4D2CE;
+}
+
+/* 다크 모드 전환 버튼 (#theme-toggle) */
+#theme-toggle {
+    padding: 6px 14px;
+    border: 1px solid #AD342A;
+    border-radius: 6px;
+    background-color: #AD342A;
+    color: #F5F1E8;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #E58A7F;
+    border-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: #C9A66B;
+    border-color: #C9A66B;
+    color: #1D1B19;
+}
+
+/* 3. 메인 페이지 (index.html) */
+body.dark-mode .hero {
+    background-color: #1D1B19;
+}
+
+body.dark-mode .hanja {
+    color: #E58A7F;
+}
+
+body.dark-mode .bg-hanja {
+    color: rgba(136, 181, 209, 0.08);
+}
+
+body.dark-mode .btn {
+    border-color: #C9A66B;
+    color: #F5F1E8;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #E58A7F;
+    border-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #E58A7F;
+    border-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #C9A66B;
+    border-color: #C9A66B;
+    color: #1D1B19;
+}
+
+/* 4. 팀 소개 · FAQ 페이지 (team.html, faq.html) */
+body.dark-mode .button {
+    background-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode .button:hover {
+    background-color: #C9A66B;
+    color: #1D1B19;
+}
+
+body.dark-mode .plain-link,
+body.dark-mode .faq-prompt a,
+body.dark-mode .faq-answer a {
+    color: #E58A7F;
+}
+
+body.dark-mode .plain-link:hover,
+body.dark-mode .faq-prompt a:hover,
+body.dark-mode .faq-answer a:hover {
+    color: #C9A66B;
+}
+
+/* 5. 팀원 소개 페이지 (members.html) */
+body.dark-mode .member-card {
+    background-color: #1D1B19;
+    border-color: #C9A66B;
+    color: #F5F1E8;
+}
+
+body.dark-mode .member-group li,
+body.dark-mode .member-actions,
+body.dark-mode .member-detail {
+    border-color: #C9A66B;
+}
+
+body.dark-mode .member-actions a {
+    color: #E58A7F;
+}
+
+body.dark-mode .member-toggle {
+    border-color: #C9A66B;
+    color: #F5F1E8;
+}
+
+body.dark-mode .member-toggle:hover {
+    background-color: #E58A7F;
+    border-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode .member-detail li::marker {
+    color: #E58A7F;
+}
+
+/* 6. 포트폴리오 갤러리 · 개인 페이지 (gallery.html, member-*.html) */
+body.dark-mode .work-card,
+body.dark-mode .detail-work,
+body.dark-mode .member-detail {
+    background-color: #1D1B19;
+    border-color: #C9A66B;
+}
+
+body.dark-mode .work-artwork {
+    background-color: #1D1B19;
+    border-right: 1px solid #C9A66B;
+    color: #D4D2CE;
+}
+
+body.dark-mode .artwork-label {
+    background-color: #1D1B19;
+    border-color: #C9A66B;
+    color: #F5F1E8;
+}
+
+body.dark-mode .work-cta,
+body.dark-mode .detail-back {
+    color: #E58A7F;
+}
+
+/* 7. 활동 기록 페이지 (activity_log.html) */
+body.dark-mode .activity-subtitle,
+body.dark-mode .meeting-date,
+body.dark-mode .meeting-detail p,
+body.dark-mode .process-date,
+body.dark-mode .photo-info p {
+    color: #D4D2CE;
+}
+
+body.dark-mode .activity-section {
+    border-top-color: #C9A66B;
+}
+
+body.dark-mode .section-title,
+body.dark-mode .photo-tag {
+    color: #E58A7F;
+}
+
+body.dark-mode .filter-btn {
+    background-color: #1D1B19;
+    border-color: #C9A66B;
+    color: #F5F1E8;
+}
+
+body.dark-mode .filter-btn:hover {
+    border-color: #E58A7F;
+    color: #E58A7F;
+}
+
+body.dark-mode .filter-btn.active {
+    background-color: #E58A7F;
+    border-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode .meeting-card,
+body.dark-mode .process-card,
+body.dark-mode .photo-card {
+    background-color: #1D1B19;
+    border-color: #C9A66B;
+}
+
+body.dark-mode .process-card {
+    border-left-color: #E58A7F;
+}
+
+body.dark-mode .process-step {
+    background-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode .process-card ul {
+    color: #F5F1E8;
+}
+
+body.dark-mode .meeting-toggle {
+    border-color: #C9A66B;
+    color: #F5F1E8;
+}
+
+body.dark-mode .meeting-toggle:hover {
+    background-color: #E58A7F;
+    border-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode .photo-box {
+    background-color: #1D1B19;
+    border-bottom: 1px solid #C9A66B;
+    color: #D4D2CE;
+}
+
+body.dark-mode .top-btn {
+    background-color: #E58A7F;
+    color: #1D1B19;
+}
+
+body.dark-mode .top-btn:hover {
+    background-color: #C9A66B;
+    color: #1D1B19;
+}
