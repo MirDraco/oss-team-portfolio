@@ -6,10 +6,15 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="css/activity_log.css">
     <script src="js/activity_log.js" defer></script>
-    <title>활동 기록</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/common.js" defer></script>
+    <title>Members | 結網 결망</title>
 </head>
 <body>
-    <!-- 공통 헤더 -->
+    <div id="site-header"></div>
+    <div id="site-nav"></div>
 
     <main class="activity">
         <h1 class="activity-title">활동 기록</h1>
@@ -108,13 +113,12 @@
             <div class="photo-list">
                 <article class="photo-card">
                     <div class="photo-box">
-                        <!-- <img src="images/activity/meeting-01.jpg" alt="팀 회의 사진"> -->
-                        <span>사진 추가 예정</span>
+                        <img src="images/activity/meeting-01.jpg" alt="팀 회의 사진">
                     </div>
                     <div class="photo-info">
                         <p class="photo-tag">활동 사진</p>
                         <h3>팀 회의 현장</h3>
-                        <p>[회의 날짜와 간단한 설명을 입력해 주세요.]</p>
+                        <p>[프로젝트 최종 점검 및 발표자료 회의]</p>
                     </div>
                 </article>
 
@@ -125,25 +129,24 @@
                     <div class="photo-info">
                         <p class="photo-tag">개발 과정</p>
                         <h3>GitHub 협업 기록</h3>
-                        <p>[PR 리뷰나 브랜치 그래프 설명을 입력해 주세요.]</p>
+                        <p>[팀원별 PR 요청]</p>
                     </div>
                 </article>
 
                 <article class="photo-card">
                     <div class="photo-box">
-                        <!-- <img src="images/activity/result.png" alt="웹사이트 결과물 화면"> -->
-                        <span>결과물 추가 예정</span>
+                        <img src="images/activity/result.png" alt="웹사이트 결과물 화면">
                     </div>
                     <div class="photo-info">
                         <p class="photo-tag">결과물</p>
                         <h3>웹사이트 배포 결과</h3>
-                        <p>[완성된 화면이나 배포 결과 설명을 입력해 주세요.]</p>
+                        <p>[GitHub Pages를 통한 웹사이트 배포]</p>
                     </div>
                 </article>
             </div>
         </section>
     </main>
 
-    <!-- 공통 푸터 -->
+    <div id="site-footer"></div>
 </body>
 </html>
