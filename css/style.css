@@ -36,8 +36,11 @@ ul {
 
 /* 메인 */
 .hero {
+    position: relative;
+    width: min(calc(100% - 40px), 1200px);
+    margin-inline: auto;
+    padding: 72px 0 96px;
     background-color: #F5F1E8;
-    padding: 120px 60px;
 }
 
 .hero h1 {
@@ -100,4 +103,11 @@ ul {
 .btn-primary {
     background: var(--black);
     color: var(--ivory);
+}
+
+@media (max-width: 600px) {
+    .hero {
+        width: calc(100% - 32px);
+        padding-block: 48px 64px;
+    }
 }
