@@ -1,0 +1,405 @@
+@media (max-width: 900px) {
+    .members-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .members {
+        padding: 28px 20px;
+    }
+
+    .member-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .team-page {
+        width: calc(100% - 32px);
+    }
+
+    .team-page .intro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        padding: 56px 0;
+    }
+
+    .team-page .title-line,
+    .team-page .title-emphasis {
+        white-space: normal;
+    }
+
+    .team-page .hanok-emblem {
+        width: min(240px, 65vw);
+    }
+
+    .team-page .about {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    .team-page .faq-prompt {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px 0 36px;
+    }
+}
+
+@media (max-width: 720px) {
+    .activity {
+        padding: 32px 16px;
+    }
+
+    .activity .photo-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .activity .photo-box {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .team-portfolio .work-grid {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        width: calc(100% - 32px);
+        padding: 56px 0 64px;
+    }
+
+    .hero h1 {
+        margin-bottom: 20px;
+        font-size: clamp(2.5rem, 11vw, 3.7rem);
+        line-height: 1.2;
+    }
+
+    .hero p {
+        margin-bottom: 24px;
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    .bg-hanja {
+        top: 16%;
+        right: -8px;
+        font-size: clamp(130px, 38vw, 220px);
+        transform: none;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .actions .btn {
+        flex: 0 1 auto;
+        justify-content: center;
+        padding: 10px 16px;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .members {
+        padding: 24px 16px;
+    }
+
+    .members-title {
+        font-size: 28px;
+    }
+
+    .members-subtitle {
+        margin-bottom: 24px;
+    }
+
+    .members-list {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .member-card {
+        padding: 18px;
+    }
+
+    .member-header {
+        gap: 12px;
+    }
+
+    .member-intro {
+        font-size: 0.95rem;
+    }
+
+    .member-actions {
+        gap: 10px;
+    }
+
+    .member-actions .contact,
+    .member-actions .contact span {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 560px) {
+    main:not(.team-page) > .intro {
+        padding: 48px 8px 40px;
+    }
+
+    main:not(.team-page) > .intro::before,
+    main:not(.team-page) > .intro::after {
+        width: 34px;
+        height: 34px;
+        opacity: 0.55;
+    }
+
+    main:not(.team-page) > .intro h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        letter-spacing: 0.04em;
+    }
+
+    main:not(.team-page) > .intro .intro-copy {
+        font-size: 0.94rem;
+    }
+
+    .team-portfolio .member-header {
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .team-portfolio .member-index {
+        flex-basis: 36px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .team-portfolio .member-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .team-portfolio .member-header p {
+        font-size: 0.82rem;
+    }
+
+    .team-portfolio .work-grid {
+        gap: 14px;
+    }
+
+    .team-portfolio .work-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .team-portfolio .work-artwork {
+        min-height: 140px;
+    }
+
+    .team-portfolio .profile-artwork {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+    }
+
+    .team-portfolio .work-content {
+        padding: 18px;
+    }
+
+    .detail-list .member-detail {
+        padding: 16px;
+    }
+
+    .detail-list .member-detail h2 {
+        font-size: 1.45rem;
+    }
+
+    .detail-list .member-bio {
+        margin-bottom: 18px;
+    }
+
+    .detail-list .detail-work {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .detail-list .detail-work .work-artwork {
+        min-height: 190px;
+    }
+
+    .detail-list .detail-content {
+        padding: 18px;
+    }
+
+    .detail-list .detail-content h3 {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .faq-page {
+        width: calc(100% - 32px);
+        padding: 48px 0 32px;
+    }
+
+    .faq-page .faq-hero h1 {
+        font-size: clamp(2rem, 9vw, 2.75rem);
+    }
+
+    .faq-page .faq-item summary {
+        grid-template-columns: 30px minmax(0, 1fr) 24px;
+        gap: 8px;
+        padding: 18px 0;
+        font-size: 0.95rem;
+    }
+
+    .faq-page .faq-answer {
+        padding: 0 4px 18px 38px;
+    }
+
+    .faq-page .faq-next {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 24px;
+    }
+
+    .faq-page .faq-next .button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #site-header > header {
+        min-height: 80px;
+    }
+
+    #site-header .logoarea {
+        width: calc(100% - 24px);
+        min-height: 80px;
+        gap: 12px;
+    }
+
+    #site-header .log img {
+        width: min(150px, 32vw);
+    }
+
+    #site-header .search input {
+        height: 40px;
+        padding: 0 12px;
+        font-size: 0.88rem;
+    }
+
+    #site-nav .nav-inner {
+        width: calc(100% - 16px);
+        justify-content: center;
+    }
+
+    #site-nav .category {
+        justify-content: center;
+        gap: 0 2px;
+    }
+
+    #site-nav .category a {
+        padding: 11px 6px;
+        font-size: 13px;
+    }
+
+    .activity {
+        padding: 24px 12px;
+    }
+
+    .activity-title {
+        font-size: 28px;
+    }
+
+    .activity-subtitle {
+        font-size: 14px;
+    }
+
+    .activity .filter-menu {
+        justify-content: flex-start;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+
+    .activity .filter-btn {
+        padding: 8px 11px;
+        font-size: 13px;
+    }
+
+    .activity .activity-section {
+        padding: 22px 0;
+    }
+
+    .activity .section-title {
+        font-size: 19px;
+    }
+
+    .activity .meeting-card,
+    .activity .process-card {
+        padding: 16px;
+    }
+
+    .activity .meeting-top {
+        align-items: flex-start;
+    }
+
+    .activity .meeting-toggle {
+        min-height: 40px;
+    }
+
+    .activity .photo-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .team-page .intro {
+        padding: 44px 0;
+    }
+
+    .team-page .intro h1 {
+        margin: 16px 0;
+        font-size: clamp(2rem, 9vw, 2.5rem);
+    }
+
+    .team-page .intro-copy {
+        font-size: 0.95rem;
+    }
+
+    .team-page .page-actions {
+        gap: 14px;
+    }
+
+    .team-page .values-list li {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .team-page .values-list strong {
+        flex: 0 0 74px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero {
+        width: calc(100% - 24px);
+        padding: 44px 0 52px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .actions {
+        gap: 10px;
+    }
+
+    .actions .btn {
+        width: auto;
+    }
+}
