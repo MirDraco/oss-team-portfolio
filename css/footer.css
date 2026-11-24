@@ -39,18 +39,3 @@ footer {
     color: #888;
     font-size: 12px;
 }
-
-@media (max-width: 600px) {
-    footer {
-        padding: 22px 0;
-        font-size: 12px;
-    }
-
-    .footer-inner {
-        width: calc(100% - 32px);
-    }
-
-    .footer-left {
-        overflow-wrap: anywhere;
-    }
-}

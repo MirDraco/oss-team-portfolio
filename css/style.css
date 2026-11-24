@@ -104,10 +104,3 @@ ul {
     background: var(--black);
     color: var(--ivory);
 }
-
-@media (max-width: 600px) {
-    .hero {
-        width: calc(100% - 32px);
-        padding-block: 48px 64px;
-    }
-}

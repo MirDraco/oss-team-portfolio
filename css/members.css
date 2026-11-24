@@ -190,25 +190,3 @@ body {
 .member-detail li::marker {
   color: #AD342A;
 }
-
-/* 태블릿 */
-@media (max-width: 1023px) {
-  .members-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* 모바일 */
-@media (max-width: 639px) {
-  .members {
-    padding: 24px 16px;
-  }
-
-  .members-list {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .member-card {
-    padding: 16px;
-  }
-}
