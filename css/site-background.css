@@ -1,0 +1,28 @@
+body {
+    background: #f4efe4;
+    background-image:
+        linear-gradient(45deg, transparent 48%, rgba(139, 73, 59, 0.035) 49%, rgba(139, 73, 59, 0.035) 51%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba(139, 73, 59, 0.035) 49%, rgba(139, 73, 59, 0.035) 51%, transparent 52%);
+    background-size: 30px 30px;
+}
+
+body.dark-mode {
+    background-color: #1d1b19;
+}
+
+#main .hero {
+    background-color: transparent;
+}
+
+body:not(.dark-mode) :is(
+    .team-page .intro-copy,
+    .team-page .about-content > p,
+    .team-page .values-list span,
+    .team-page .faq-prompt p,
+    .faq-page .faq-hero > p:last-child,
+    .faq-page .faq-answer,
+    .faq-page .faq-next p,
+    .activity .activity-subtitle
+) {
+    color: #6c6459;
+}
