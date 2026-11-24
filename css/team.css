@@ -176,30 +176,6 @@ h1, h2 {
     font-size: .92rem;
 }
 :focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
-@media (max-width: 680px) {
-    .team-page { width: calc(100% - 36px); }
-    .intro {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        padding: 60px 0 50px;
-    }
-    .intro h1 { margin: 16px 0; }
-    .intro-copy { font-size: .95rem; }
-    .hanok-emblem { width: 250px; }
-    .about {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        padding: 28px 0;
-    }
-    .values-list li { gap: 10px; font-size: .86rem; }
-    .values-list strong { flex-basis: 72px; }
-    .faq-prompt {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 6px;
-        padding: 22px 0 36px;
-    }
-}
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
 }

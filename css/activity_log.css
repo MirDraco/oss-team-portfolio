@@ -233,10 +233,3 @@ body {
     font-size: 14px;
     color: #71695E;
 }
-
-/* 모바일 화면 */
-@media (max-width: 768px) {
-    .photo-list {
-        grid-template-columns: 1fr;
-    }
-}

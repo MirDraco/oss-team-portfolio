@@ -78,16 +78,3 @@
 }
 .faq-next p { margin: 0; color: var(--muted); font-size: .92rem; }
 :focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
-@media (max-width: 640px) {
-    .faq-page { width: calc(100% - 36px); padding: 58px 0 28px; }
-    .faq-hero { padding-bottom: 28px; }
-    .faq-hero h1 { font-size: clamp(2.1rem, 10vw, 3.1rem); }
-    .faq-item summary {
-        grid-template-columns: 32px minmax(0, 1fr) 26px;
-        gap: 8px;
-        padding: 18px 2px;
-        font-size: .92rem;
-    }
-    .faq-answer { padding: 0 30px 20px 42px; font-size: .92rem; }
-    .faq-next { align-items: flex-start; flex-direction: column; }
-}

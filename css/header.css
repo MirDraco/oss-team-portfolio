@@ -55,25 +55,3 @@ body > header,
     outline: 2px solid #5a3a1b;
     outline-offset: 2px;
 }
-
-@media (max-width: 600px) {
-    .logoarea {
-        width: calc(100% - 32px);
-        min-height: 82px;
-        gap: 16px;
-    }
-
-    .log img {
-        width: clamp(100px, 30vw, 150px);
-    }
-
-    .search {
-        flex: 1 1 auto;
-    }
-
-    .search input {
-        height: 42px;
-        padding: 0 14px;
-        font-size: 14px;
-    }
-}
